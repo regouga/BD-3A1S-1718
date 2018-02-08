@@ -1,0 +1,38 @@
+
+file = open('populate_reposicao.sql', 'w')
+f = open('populate_evento.sql', 'w')
+
+for j in range(1, 12):
+    for i in range (1, 28):
+        j = str(j)
+        i = str(i)
+        file.write('insert into reposicao values (111111, 1, \'Direito\', 0.90, \'Andre Gomes\', \'2017-'+j+'-'+i+' 9:23:12\', 5);\n')
+        file.write('insert into reposicao values (900069, 1, \'Direito\', 0.90, \'Andre Gomes\', \'2017-'+j+'-'+i+' 9:23:13\', 5);\n')
+        file.write('insert into reposicao values (111111, 1, \'Direito\', 0.90, \'Jose Esteves\', \'2017-'+j+'-'+i+' 9:23:15\', 5);\n')
+        file.write('insert into reposicao values (111112, 1, \'Esquerdo\', 0.90, \'Andre Gomes\', \'2017-'+j+'-'+i+' 10:33:12\', 10);\n')
+        file.write('insert into reposicao values (111114, 2, \'Esquerdo\', 0.90, \'Marcia Rodrigues\', \'2017-'+j+'-'+i+' 10:37:52\', 10);\n')
+        file.write('insert into reposicao values (111115, 2, \'Esquerdo\', 0.90, \'Joao Silva\', \'2017-'+j+'-'+i+' 11:00:20\', 5);\n')
+        file.write('insert into reposicao values (900001, 3, \'Esquerdo\', 0.90, \'Joao Silva\', \'2017-'+j+'-'+i+' 11:10:20\', 15);\n')
+        file.write('insert into reposicao values (900002, 3, \'Direito\', 0.90, \'Anabela Santos\', \'2017-'+j+'-'+i+' 11:37:52\', 15);\n')
+        file.write('insert into reposicao values (111115, 2, \'Esquerdo\', 0.90, \'Andre Gomes\', \'2017-'+j+'-'+i+' 13:23:12\', 7);\n')
+        file.write('insert into reposicao values (900011, 3, \'Direito\', 1.20, \'Andre Gomes\', \'2017-'+j+'-'+i+' 13:35:12\', 7);\n')
+        file.write('insert into reposicao values (900012, 3, \'Esquerdo\', 1.20, \'Andre Gomes\', \'2017-'+j+'-'+i+' 14:05:12\', 10);\n')
+        file.write('insert into reposicao values (900014, 4, \'Esquerdo\', 0.90, \'Andre Gomes\', \'2017-'+j+'-'+i+' 15:52:27\', 10);\n')
+        file.write('insert into reposicao values (900015, 4, \'Direito\', 0.90, \'Jose Esteves\', \'2017-'+j+'-'+i+' 16:23:15\', 10);\n')
+        file.write('insert into reposicao values (900016, 4, \'Esquerdo\', 1.20, \'Jose Esteves\', \'2017-'+j+'-'+i+' 17:34:15\', 5);\n')
+
+
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 9:23:12\');\n')
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 9:23:13\');\n')
+        f.write('insert into evento_reposicao values (\'Jose Esteves\', \'2017-'+j+'-'+i+' 9:23:15\');\n')
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 10:33:12\');\n')
+        f.write('insert into evento_reposicao values (\'Marcia Rodrigues\', \'2017-'+j+'-'+i+' 10:37:52\');\n')
+        f.write('insert into evento_reposicao values (\'Joao Silva\', \'2017-'+j+'-'+i+' 11:00:20\');\n')
+        f.write('insert into evento_reposicao values (\'Joao Silva\', \'2017-'+j+'-'+i+' 11:10:20\');\n')
+        f.write('insert into evento_reposicao values (\'Anabela Santos\', \'2017-'+j+'-'+i+' 11:37:52\');\n')
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 13:23:12\');\n')
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 13:35:12\');\n')
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 14:05:12\');\n')
+        f.write('insert into evento_reposicao values (\'Andre Gomes\', \'2017-'+j+'-'+i+' 15:52:27\');\n')
+        f.write('insert into evento_reposicao values (\'Jose Esteves\', \'2017-'+j+'-'+i+' 16:23:15\');\n')
+        f.write('insert into evento_reposicao values (\'Jose Esteves\', \'2017-'+j+'-'+i+' 17:34:15\');\n')
